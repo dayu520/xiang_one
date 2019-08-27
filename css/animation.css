@@ -1,0 +1,254 @@
+/*变大*/
+@keyframes toBig{
+	0%{
+		transform:scale(0);
+		opacity:0;
+	}
+	50%{
+		transform:scale(1.1);
+	}
+	100%{
+		transform:scale(1);
+		opacity:1;
+	}
+}
+/*左到右*/
+@keyframes leftToRight{
+	0%{
+		transform:translate(-18px);
+		opacity:0;
+	}
+	100%{
+		transform:translate(0);
+		opacity:1;
+	}
+}
+/*右到左*/
+@keyframes rightToLeft{
+	0%{
+		transform:translate(18px);
+		opacity:0;
+	}
+	100%{
+		transform:translate(0);
+		opacity:1;
+	}
+}
+/*下到上*/
+@keyframes bottomToTop{
+	0%{
+		transform:translateY(18px);
+		opacity:0;
+	}
+	100%{
+		transform:translate(0);
+		opacity:1;
+	}
+}
+/*上到下*/
+@keyframes topToBottom{
+	0%{
+		transform:translateY(-18px);
+		opacity:0;
+	}
+	100%{
+		transform:translate(0);
+		opacity:1;
+	}
+}
+/*左上*/
+@keyframes upperLeft{
+	0%{
+		transform:translate(-18px,-18px);
+		opacity:0;
+	}
+	100%{
+		transform:translate(0,0);
+		opacity:1;
+	}
+}
+/*右上*/
+@keyframes upperRight{
+	0%{
+		transform:translate(18px,-18px);
+		opacity:0;
+	}
+	100%{
+		transform:translate(0,0);
+		opacity:1;
+	}
+}
+/*左下*/
+@keyframes lowerLeft{
+	0%{
+		transform:translate(-18px,18px);
+		opacity:0;
+	}
+	100%{
+		transform:translate(0,0);
+		opacity:1;
+	}
+}
+/*右下*/
+@keyframes lowerRight{
+	0%{
+		transform:translate(18px,18px);
+		opacity:0;
+	}
+	100%{
+		transform:translate(0,0);
+		opacity:1;
+		
+	}
+}
+/*左上变大*/
+@keyframes uLB{
+	0%{
+		transform:translate(-36px,-36px) scale(0);
+		opacity:0;
+	}
+	100%{
+		transform:translate(0,0) scale(1);
+		opacity:1;
+	}
+}
+/*右上变大*/
+@keyframes uRB{
+	0%{
+		transform:translate(36px,-36px) scale(0);
+		opacity:0;
+	}
+	100%{
+		transform:translate(0,0) scale(1);
+		opacity:1;
+	}
+}
+/*左下变大*/
+@keyframes lLB{
+	0%{
+		transform:translate(-36px,36px) scale(0);
+		opacity:0;
+	}
+	100%{
+		transform:translate(0,0) scale(1);
+		opacity:1;
+	}
+}
+/*右下变大*/
+@keyframes lRB{
+	0%{
+		transform:translate(36px,36px) scale(1);
+		opacity:0;
+	}
+	100%{
+		transform:translate(0,0) scale(1);
+		opacity:1;
+		
+	}
+}
+.toBig{
+	animation:toBig 800ms linear 400ms 1;
+	animation-fill-mode:both;
+}
+.leftToRight{
+	animation:leftToRight 500ms linear 400ms 1;
+	animation-fill-mode:both;
+}
+.rightToLeft{
+	animation:rightToLeft 500ms linear 400ms 1;
+	animation-fill-mode:both;
+}
+.bottomToTop{
+	animation:bottomToTop 500ms linear 400ms 1;
+	animation-fill-mode:both;
+}
+.topToBottom{
+	animation:topToBottom 500ms linear 400ms 1;
+	animation-fill-mode:both;
+}
+.upperLeft{
+	animation:upperLeft 500ms linear 400ms 1;
+	animation-fill-mode:both;
+}
+.upperRight{
+	animation:upperRight 500ms linear 400ms 1;
+	animation-fill-mode:both;
+}
+.lowerLeft{
+	animation:lowerLeft 500ms linear 400ms 1;
+	animation-fill-mode:both;
+}
+.lowerRight{
+	animation:lowerRight 500ms linear 400ms 1;
+	animation-fill-mode:both;
+}
+.uLB{
+	animation:uLB 500ms linear 400ms 1;
+	animation-fill-mode:both;
+}
+.uRB{
+	animation:uRB 500ms linear 400ms 1;
+	animation-fill-mode:both;
+}
+.lLB{
+	animation:lLB 500ms linear 400ms 1;
+	animation-fill-mode:both;
+}
+.lRB{
+	animation:lRB 500ms linear 400ms 1;
+	animation-fill-mode:both;
+}
+
+
+.toBigNoDelay{
+	animation:toBig 800ms linear 1;
+	animation-fill-mode:both;
+}
+.leftToRightNoDelay{
+	animation:leftToRight 500ms linear 1;
+	animation-fill-mode:both;
+}
+.rightToLeftNoDelay{
+	animation:rightToLeft 500ms linear 1;
+	animation-fill-mode:both;
+}
+.bottomToTopNoDelay{
+	animation:bottomToTop 500ms linear 1;
+	animation-fill-mode:both;
+}
+.topToBottomNoDelay{
+	animation:topToBottom 500ms linear 1;
+	animation-fill-mode:both;
+}
+.upperLeftNoDelay{
+	animation:upperLeft 500ms linear 1;
+	animation-fill-mode:both;
+}
+.upperRightNoDelay{
+	animation:upperRight 500ms linear 1;
+	animation-fill-mode:both;
+}
+.lowerLeftNoDelay{
+	animation:lowerLeft 500ms linear 1;
+	animation-fill-mode:both;
+}
+.lowerRightNoDelay{
+	animation:lowerRight 500ms linear 1;
+	animation-fill-mode:both;
+}
+.uLBNoDelay{
+	animation:uLB 500ms linear 1;
+	animation-fill-mode:both;
+}
+.uRBNoDelay{
+	animation:uRB 500ms linear 1;
+	animation-fill-mode:both;
+}
+.lLBNoDelay{
+	animation:lLB 500ms linear 1;
+	animation-fill-mode:both;
+}
+.lRBNoDelay{
+	animation:lRB 500ms linear 1;
+	animation-fill-mode:both;
+}

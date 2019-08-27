@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<link rel="stylesheet" href="css/no_find.css">
+<link rel="stylesheet" href="css/common.css">
+<body>
+<!-- 	<div id="bg" class="wrap clear">
+		<img src="img/no_find/timg.jpg" alt="">
+	</div> -->
+	<div class="clear" id="prompt">
+		<div class="top">
+			<h1>温馨提示:</h1>
+		</div>
+		<div class="left">
+			<img src="img/no_find/5336d58a596d8.png" alt="">
+		</div>
+		<div class="right">
+			<h1>
+				啊哦，你所访问的页面不存在!
+			</h1>
+			<p>
+				可能原因：</br>
+				1、在地址栏中输入了错误的地址。</br>
+				2、你点击的某个链接已过期。
+			</p>
+			<p>
+				<a href="index.html">回到网站首页</a>
+			</p>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+$("#prompt").css("left",($(window).width()-$("#prompt").outerWidth())/2);
+$("#prompt").css("top",($(window).height()-$("#prompt").outerHeight())/2);
+$(window).on("resize scroll",function(){
+	$("#prompt").css("left",($(window).width()-$("#prompt").outerWidth())/2);
+	$("#prompt").css("top",($(window).height()-$("#prompt").outerHeight())/2+
+	$(window).scrollTop());
+
+})
+
+
+
+function back(){
+location.href=history.go(-1);
+}
+
+</script>
+</html>
